@@ -11,7 +11,7 @@ public class RandomNumGenerator : MonoBehaviour
     void Start()
     {
 
-        rand_num = Random.Range(3, 30);
+        rand_num = Random.Range(1, 100);
 
     }
 

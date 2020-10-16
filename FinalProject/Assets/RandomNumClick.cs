@@ -12,7 +12,7 @@ public class RandomNumClick : MonoBehaviour
     void Start()
     {
         button.onClick.AddListener(SetButton);
-        rand_num = Random.Range(3, 30);
+        rand_num = Random.Range(1, 100);
     }
 
     // Update is called once per frame
@@ -24,5 +24,6 @@ public class RandomNumClick : MonoBehaviour
     void SetButton()
     {
         newText.text = rand_num.ToString();
+        button.interactable = false;
     }
 }
