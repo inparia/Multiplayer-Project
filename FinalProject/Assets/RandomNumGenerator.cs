@@ -3,22 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class RandomNumber : MonoBehaviour
+public class RandomNumGenerator : MonoBehaviour
 {
-
     public Text newText;
     private int rand_num;
     // Start is called before the first frame update
     void Start()
     {
 
-        rand_num = Random.Range(0, 10);
+        rand_num = Random.Range(3, 30);
 
     }
 
     // Update is called once per frame
     void Update()
     {
-        newText.text.Equals(rand_num);
+        newText.text = rand_num.ToString();
     }
 }
