@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+[System.Serializable]
 public class RandomNumClick : MonoBehaviour
 {
     // Start is called before the first frame update
     public Button button;
     public Text newText;
-    private int rand_num;
+    public int rand_num;
+    public GameManager gameManager;
     void Start()
     {
         button.onClick.AddListener(SetButton);
@@ -25,5 +27,9 @@ public class RandomNumClick : MonoBehaviour
     {
         newText.text = rand_num.ToString();
         button.interactable = false;
+        gameManager.AddUp(rand_num);
     }
+
+
+
 }
