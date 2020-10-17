@@ -18,6 +18,6 @@ public class SumController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        temptext.text = gameManager.sum.ToString();
+        temptext.text = "Sum: " + gameManager.sum.ToString();
     }
 }

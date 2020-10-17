@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class RandomNumGenerator : MonoBehaviour
 {
+    public GameManager gameManager;
     public Text newText;
     private int rand_num;
     // Start is called before the first frame update
@@ -12,12 +13,13 @@ public class RandomNumGenerator : MonoBehaviour
     {
 
         rand_num = Random.Range(1, 100);
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         newText.text = rand_num.ToString();
+        gameManager.SetGameNumber(rand_num);
     }
 }
