@@ -22,8 +22,8 @@ public class CommitNewIPScript : MonoBehaviour
     }
     public void printIP()
     {
-        ip = inputField.GetComponent<Text>().text;
-        Debug.Log(ip.ToString());
+        //ip = inputField.GetComponent<Text>().text;
+       // Debug.Log(ip.ToString());
     }
     
 }
