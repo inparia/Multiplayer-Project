@@ -543,6 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4823ecf79afa1425c923aabbb23b48ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &582806789
 GameObject:
   m_ObjectHideFlags: 0
@@ -712,7 +713,7 @@ MonoBehaviour:
       - m_Target: {fileID: 623539627}
         m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
         m_MethodName: ButtonNext
-        m_Mode: 5
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -720,7 +721,7 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: ClientScene
           m_BoolArgument: 0
-        m_CallState: 2
+        m_CallState: 1
 --- !u!114 &623539625
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -771,6 +772,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4823ecf79afa1425c923aabbb23b48ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
 --- !u!1 &651107738
 GameObject:
   m_ObjectHideFlags: 0
@@ -1344,3 +1346,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4823ecf79afa1425c923aabbb23b48ec, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
