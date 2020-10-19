@@ -8,7 +8,7 @@ public class ButtonScript : MonoBehaviour
 
     public void ButtonNext()
     {
-         SceneManager.LoadScene("ClientScene");
+        SceneManager.LoadScene("ClientScene");
     }
 
     public void StopButton()
@@ -23,4 +23,19 @@ public class ButtonScript : MonoBehaviour
             SceneManager.LoadScene("LoseScene");
         }
     }
+
+    public void RuleButton()
+    {
+        SceneManager.LoadScene("RulesScene");
+    }
+    public void SettingButton()
+    {
+        SceneManager.LoadScene("SettingsScene");
+    }
+
+    public void MainButton()
+    {
+        SceneManager.LoadScene("Start(Menu)State");
+    }
 }
+
