@@ -43,4 +43,11 @@ public class GameManager : MonoBehaviour
         goalNumber = gameNumber;
     }
 
+
+
+    public int GetGameNumber()
+    {
+        return goalNumber;
+    }
+
 }
