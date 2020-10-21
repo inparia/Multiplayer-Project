@@ -13,7 +13,6 @@ public class RandomNumClick : MonoBehaviour
     public GameManager gameManager;
     void Start()
     {
-        button.onClick.AddListener(SetButton);
         rand_num = Random.Range(1, 100);
     }
 
@@ -23,7 +22,7 @@ public class RandomNumClick : MonoBehaviour
         
     }
 
-    void SetButton()
+    public void SetRandom()
     {
         newText.text = rand_num.ToString();
         button.interactable = false;
